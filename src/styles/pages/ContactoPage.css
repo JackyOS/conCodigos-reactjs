@@ -1,0 +1,100 @@
+/*-------------------- Contacto ---------------- */
+
+.columna {
+    width: 90%;
+    margin: 35px auto;
+    padding: 15px;
+    box-shadow: 0px 0px 6px -2px #333333;
+    text-align: center;
+}
+
+.formulario{
+    margin: 35px auto;
+    width: 90%;
+}
+
+.formulario .p__input__contacto {
+    margin: 5px 0px;
+    width: 100%;
+}
+
+.formulario .p__input-nombre-email{
+    display: flex;
+}
+
+.textarea__contacto, .select__contacto, .input__contacto {
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.formulario .p__input__contacto .input__contacto:first-child {
+    margin-right: 5px;
+}
+
+.input__contacto, .select__contacto, .textarea__contacto {
+    background-color: #34495E;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.input__contacto:focus, .textarea__contacto {
+    border-bottom: 3px solid #ebac00;
+}
+
+.input__contacto::placeholder, .formulario select option, .textarea__contacto::placeholder {
+    color: #ebac0090;
+}
+
+.textarea__contacto{
+    resize: none;
+    margin-bottom: 0;
+}
+
+.accion {
+    margin-top: 10px;
+}
+
+.btn_form {
+    width: 100%;
+}
+
+.mensaje-form-enviado {
+    color:rgb(43, 194, 5);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.activo-btn {
+    display:none ;
+}
+
+
+
+@media screen and (max-width:860px) {
+
+
+    .formulario{
+        width: 90%;
+    }
+
+
+}
+
+
+@media screen and (max-width:479px) {
+
+
+    .formulario .p__input__contacto {
+        display: block;
+    }
+
+    .formulario .p__input__contacto input {
+        margin: 5px 0;
+    }
+
+
+}

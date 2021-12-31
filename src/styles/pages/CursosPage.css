@@ -1,0 +1,320 @@
+
+/* ------------------------CURSOS----------------------------- */
+
+/* Guia */
+
+.cursos-container {
+    width: 95%;
+    margin: 40px auto 10px;
+}
+
+.ul-guia-cursos {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.ul-guia-cursos li{
+    width: 90%;
+    text-align: center;
+    list-style: none;
+    font-weight: 700;
+    padding: 10px ;
+    /* transition: all 0.5s ease; */
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 5px ;
+}
+
+.ul-guia-cursos li:first-child{
+    margin-left: 0;
+}
+
+.li-guia-cursos {
+    /* border: 1px solid rgba(160, 160, 160, 0.638); */
+    box-shadow: 0px 0px 6px -2px #333333;
+    /* border-bottom: 3px solid #335176; */
+    border-bottom: 3px solid #ec8f16;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #929191;
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* .ul-guia-cursos li */
+.active-tabs{
+    background-color: #ec8f16;
+    border: 3px solid #ec8f16;
+    color: #000
+}
+
+
+
+
+/* guia cursos nav */
+
+.guiaNav-container {
+    display: none;
+}
+
+
+
+
+/* Contenedor */
+
+/* .contenedor-cursos {
+    padding: 15px;
+    box-shadow: 0px 0px 6px -2px #333333;
+    text-align: center;
+} */
+
+
+.contenedor-curso{
+    padding: 15px;
+    /* border: 3px solid  #ec8f16; */
+    display: none;
+    box-shadow: 0px 0px 6px -2px #333333;
+}
+
+
+
+/* .contenedor-curso */
+.active-content {
+    display: block;
+}
+
+.contenedor-curso h2 {
+    font-size: 40px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.subtiulo-p {
+    font-size: 20px;
+    margin-bottom: 25px;
+    /* text-align: justify; */
+    line-height:25px;
+    color: #30353B
+}
+
+
+.contenedor-tarjetas { 
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tarjeta-curso {
+    background: linear-gradient(180deg,#335176 0%, #1A1B1F 100%) ;
+    border-radius: 10px;
+    max-width: 330px;
+    min-width: 250px;
+    flex-grow: 1;
+    margin: 0 5px 25px;
+    padding: 15px 5px;
+    text-align: center;
+    box-shadow: 0 2px 15px #000; 
+    transition: transform 0.6s;
+  
+}
+
+
+.tarjeta-curso:hover{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    transform: scale(1.03);
+    /* cursor: pointer; */
+}
+
+.tarjeta-img {
+    width: 95%;
+    height: 25vh;
+    border-radius: 10px;
+}
+
+.tarjeta-texto {
+   padding: 0 5px;
+   /* height: 20vh; */
+   
+}
+
+.tarjeta__titulo {
+    color: #fff;
+    font-size: 35px;
+    /* line-height: 35px; */
+    margin: 15px 0 5px;
+
+}
+
+.tarjeta__p {
+    color: #f7d9d990;
+    font-weight: 300;
+}
+
+
+
+
+
+
+@media screen and (max-width:860px) {
+
+    /*------------------------CURSOS-------------- */
+
+    .contenedor-curso h2 {
+        font-size: 37px;
+        line-height: 35px;
+    }
+
+    .tarjeta-curso {
+        width: 100%;
+        max-width: 650px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .subtiulo-p {
+        width: 90%;
+        font-size: 18px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .tarjeta-img {
+        width: 45%;
+        height: 27vh;
+    }
+
+    .tarjeta__titulo {
+        font-size: 27px;
+        line-height: 35px;
+        margin: 5px 0;
+    }
+    
+    .tarjeta-texto {
+        width: 50%;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width:590px) {
+
+
+    /* -------------CURSO------------- */
+    .ul-guia-cursos {
+        flex-wrap: wrap;
+    }
+
+    .ul-guia-cursos li{
+        width: 30%;
+        flex-grow: 1;
+    }
+
+    .subtiulo-p {
+     font-size: 16px;
+    }
+
+    .contenedor-curso h2 {
+        font-size: 30px;    
+    }
+    
+    .contenedor-tarjetas {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .tarjeta-curso {
+        display: block;
+        max-width: 400px;
+    }
+
+    .tarjeta-img {
+        width: 95%;
+        height: 30vh;
+    }
+
+    .tarjeta__titulo {
+        font-size: 23px;
+    }
+
+    .tarjeta-texto {
+        width: 95%;
+    }
+
+    .ul-guia-cursos {
+        display: none;
+    }
+
+        /* guia cursos nav */   
+
+        .guiaNav-container {
+            display: block;
+            margin: 20px auto 10px;
+            width: 85%;
+            font-size: 16px;
+    
+        }
+    
+        .li-guia-cursos-nav {
+            color: #000;
+            list-style-type: none;
+            border: 5px solid #fff;
+            padding: 10px;
+            cursor: pointer;
+            /* background-color: #ec8f16; */
+            background: #f7971e;
+            border-radius: 10px;
+        }
+    
+        /* .ul-guia-cursos li */
+        .active-tabs-nav{
+            color: #fff;
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: bold;
+        }
+    
+        .li-container-nav {
+            text-align: center;
+        }
+ 
+
+}
+
+
+@media screen and (max-width:479px) {
+
+    /*-------------CURSO------------- */
+
+
+
+    .contenedor-cursos h2 {
+        font-size: 25px;
+        line-height: 25px;    
+    }
+
+    .contenedor-tarjetas {
+        width: 95%;
+    }
+
+    .tarjeta-img {
+        height: 28vh;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+

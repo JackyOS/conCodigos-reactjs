@@ -1,0 +1,159 @@
+/* -----------------------HEADER------------------------------ */
+
+
+.header {
+    background-color: #34495E ;
+    color: #fff;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.contenedor-header  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-header {
+    display: flex;
+}
+
+.texto-logo-header {
+    margin-top: 10px;
+    margin-left: 3px;
+    width: 65%;
+}
+
+.texto-logo-header h1 {
+    letter-spacing: 8px;
+    line-height: 25px;
+    font-size: 25px;
+    margin: 0;
+}
+
+.texto-logo-header p {
+    margin: 0;
+    font-size: 14px;
+    color: #eb9411;
+    font-style: italic;
+}
+
+/* --------------------------NAV------------------------- */
+
+nav ul {
+    list-style: none; 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav ul li {
+    padding: 5px;
+    font-size: 22px;
+    margin: 0 3px;
+
+}
+
+
+nav ul li a {
+    padding: 0 5px;
+    letter-spacing: 3px;
+    text-decoration: none;
+    color: #fff;
+
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid rgb(206, 141, 22);
+}
+
+
+.activo {
+    border-bottom: 2px solid rgb(206, 141, 22);
+}
+
+/*------------------ nav responsive ------------------*/
+
+nav #icon {
+    color: #fff;
+    font-size: 30px;
+    line-height: 80px;
+    justify-content: right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media screen and (max-width:860px) {
+
+    /* --------HEADER ---- NAV--------------- */
+
+    nav #icon {
+        display: block;
+        padding: 0 2px;
+        text-align: end;
+    }
+
+    nav ul{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 90vh;
+        display: none;
+    }
+
+    nav ul li{
+        padding: 20px;
+        /* margin-bottom: 10px; */
+        font-size: 36px;
+        text-align: center;
+    }
+     
+
+    /* --------------------css+js------------------ */
+    body.noScroll {
+        overflow-x:hidden; 
+        overflow-y:hidden;
+    }
+
+    .nav.cien {
+        width: 100%;
+    }
+
+    .nav-ul.activado{
+        display: flex; 
+    }
+
+    .logo-header.none {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:590px) {
+
+
+
+    /* --------------HEADER----------- */
+
+    header div h1 {
+        letter-spacing: 5px;
+        line-height: 10px;
+        font-size: 16px;
+    }
+    
+    header div p {
+        display: none;
+    }
+
+    header img {
+        width: 45px;
+    }
+
+}
